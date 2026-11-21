@@ -92,3 +92,59 @@ To run the project:
 
 ### 4. Automated Testing
 ![Pytest results](reports/screenshots/pytest_results.png)
+
+
+## Model Evaluation Results
+
+The selected Random Forest model was evaluated on a
+held-out test dataset.
+
+### Performance Metrics
+
+| Metric | Test Result |
+|---|---:|
+| PR-AUC | 0.7711 |
+| ROC-AUC | 0.9609 |
+| Precision | 0.8816 |
+| Recall | 0.7053 |
+| F1-score | 0.7836 |
+| Decision Threshold | 0.6245 |
+
+### Confusion Matrix
+
+| Actual / Predicted | Legitimate | Fraud |
+|---|---:|---:|
+| Legitimate | 56,642 | 9 |
+| Fraud | 28 | 67 |
+
+### Key Findings
+
+- Correctly identified 67 fraudulent transactions.
+- Missed 28 fraudulent transactions.
+- Incorrectly flagged 9 legitimate transactions.
+- Achieved 88.16% precision and 70.53% recall.
+
+### Limitations
+
+This project is an educational demonstration
+using a historical credit card dataset.
+
+The reported results do not establish performance
+on live payment transactions.
+
+
+
+## System Architecture
+
+```mermaid
+flowchart TD
+    A["Credit Card Dataset"] --> B["Data Preprocessing"]
+    B --> C["Model Training"]
+    C --> D["Saved Random Forest Model"]
+    D --> E["Prediction Logic"]
+    E --> F["FastAPI Backend"]
+    G["Streamlit Dashboard"] --> F
+    F --> G
+    C --> H["Model Evaluation"]
+    F --> I["Automated API Tests"]
+```

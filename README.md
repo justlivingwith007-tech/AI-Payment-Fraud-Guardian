@@ -78,3 +78,17 @@ To run the project:
 2. Extract the downloaded ZIP.
 3. Copy `creditcard.csv` into the project's `data/` folder.
 4. Run the training instructions in this README.
+
+## Application Screenshots
+
+### 1. Streamlit Fraud Prediction Dashboard
+![Dashboard prediction](reports/screenshots/dashboard_prediction.png)
+
+### 2. FastAPI Documentation
+![FastAPI endpoints](reports/screenshots/fastapi_docs.png)
+
+### 3. Successful Fraud Detection API Response
+![FastAPI prediction](reports/screenshots/api_prediction.png)
+
+### 4. Automated Testing
+![Pytest results](reports/screenshots/pytest_results.png)

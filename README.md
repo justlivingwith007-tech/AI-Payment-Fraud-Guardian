@@ -59,3 +59,22 @@ Open http://127.0.0.1:8501 and upload a CSV containing `Time`, `V1`–`V28`, `Am
 ## Suggested learning order
 
 Read `data/README.md`, then `src/preprocess.py`, `src/train.py`, `src/evaluate.py`, `src/predict.py`, `api/schemas.py`, `api/main.py`, `dashboard/app.py` and finally `tests/`.
+## Dataset
+
+This project uses the **Credit Card Fraud Detection** dataset from Kaggle, associated with the Machine Learning Group at Université Libre de Bruxelles (ULB) and Worldline.
+
+- **Total transactions:** 284,807
+- **Fraudulent transactions:** 492
+- **Features:** Time, V1–V28, Amount and Class
+- **Source:** https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+### Download instructions
+
+The dataset is not included in this GitHub repository because the CSV file exceeds GitHub's normal file-size limit.
+
+To run the project:
+
+1. Download the dataset from the Kaggle link above.
+2. Extract the downloaded ZIP.
+3. Copy `creditcard.csv` into the project's `data/` folder.
+4. Run the training instructions in this README.

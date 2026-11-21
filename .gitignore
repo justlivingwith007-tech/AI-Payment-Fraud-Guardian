@@ -1,0 +1,40 @@
+
+# Virtual environment
+.venv/
+venv/
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# IDE / operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary results and logs
+*.log
+tmp/
+temp/
+
+# Locally generated models
+*.joblib
+*.pkl
+*.pickle
+
+# Large or private raw datasets
+data/raw/
+data/creditcard.csv

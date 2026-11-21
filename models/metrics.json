@@ -1,0 +1,29 @@
+{
+  "selected_model": "random_forest",
+  "validation": {
+    "logistic_regression": {
+      "validation_pr_auc": 0.8138795553354512,
+      "threshold": 0.9999999496924593
+    },
+    "random_forest": {
+      "validation_pr_auc": 0.8645539428525101,
+      "threshold": 0.6244953109582141
+    }
+  },
+  "test": {
+    "pr_auc": 0.7711081824488345,
+    "roc_auc": 0.9609461996768767,
+    "precision": 0.881578947368421,
+    "recall": 0.7052631578947368,
+    "f1": 0.783625730994152,
+    "confusion_matrix_tn_fp_fn_tp": [
+      56642,
+      9,
+      28,
+      67
+    ],
+    "threshold": 0.6244953109582141
+  },
+  "split": "64% train / 16% validation / 20% held-out test; stratified random split",
+  "caveat": "Random split is a learning baseline, not a temporal out-of-time evaluation."
+}
